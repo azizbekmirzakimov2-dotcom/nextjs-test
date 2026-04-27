@@ -1,9 +1,10 @@
-import React from 'react'
+"use client";
+import { useState } from "react";
 
-function Admin() {
+export default function AdminPage() {
+
+
   return (
-    <div>Admin</div>
-  )
+ <div></div>
+  );
 }
-
-export default Admin
