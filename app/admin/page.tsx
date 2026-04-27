@@ -1,8 +1,8 @@
-import ReacAdmint from 'react'
+import React from 'react'
 
 function Admin() {
   return (
-    <div>Admin  </div>
+    <div>Admin</div>
   )
 }
 

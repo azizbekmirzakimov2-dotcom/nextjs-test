@@ -1,15 +1,24 @@
-import Hero from "./components/Hero";
-import Header from "./widgets/Header";
+import React from 'react'
+import Header from './widgets/Header' // Header yo'lini to'g'ri ko'rsating
+import BoshSahifa from './bosh/page' // BoshSahifa yo'lini to'g'ri ko'rsating
+import Kinolar from './kinolar/page'
 
-
-export default async function Home() {
-  const res=await fetch("http://localhost:8000/mahsulotlar")
-  const mahsulotlar=await res.json()
+export default function Home() {
   return (
-    <main>
+    <main className="relative min-h-screen bg-[#111111]">
+    
       <Header />
-      <Hero />
-      
+
+ 
+      <BoshSahifa />
+      <div className="relative z-10 -mt-20"> 
+         <Kinolar />
+      </div>
+
+    
+      <section className="p-10">
+       
+      </section>
     </main>
   )
 }
